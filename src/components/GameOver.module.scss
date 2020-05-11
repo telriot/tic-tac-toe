@@ -1,0 +1,21 @@
+@import "../variables";
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  align-items: center;
+}
+.text {
+  color: $color-blue-1;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.button {
+  background-color: $color-blue-1;
+  text-transform: uppercase;
+  color: $color-white;
+  padding: 0.8rem 3rem;
+  border-radius: 6px;
+  font-size: 1rem;
+}

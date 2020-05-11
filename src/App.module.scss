@@ -1,0 +1,13 @@
+@import "./variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100vh;
+  @media (max-width: 32.5em) {
+    margin: 0;
+    background-color: $color-azure;
+    height: 100vh;
+  }
+}

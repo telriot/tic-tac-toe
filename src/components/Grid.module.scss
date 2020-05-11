@@ -1,0 +1,51 @@
+@import "../variables";
+
+.container {
+  display: inline-block;
+  position: absolute;
+  background: $color-azure;
+  padding: 1.5rem;
+  height: 80vw;
+  width: 80vw;
+  max-height: 60vh;
+  max-width: 60vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  border-radius: 8px;
+  @media (max-width: 37.5em) {
+    height: 90vw;
+    width: 90vw;
+  }
+  @media (max-width: 32.5em) {
+    height: 100vw;
+    width: 100vw;
+    background-color: transparent;
+    transform: translate(-50%, -63%);
+  }
+}
+.grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1vw;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.itemP0,
+.itemP1,
+.itemP2 {
+  border-radius: 8px;
+}
+.itemP0 {
+  background-color: $color-blue-1;
+}
+
+.itemP1 {
+  background-color: $color-blue-2;
+}
+.itemP2 {
+  background-color: $color-red;
+}

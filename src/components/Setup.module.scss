@@ -1,0 +1,39 @@
+@import "../variables";
+
+.container {
+  background: $color-azure;
+  padding: 2rem;
+  min-width: 60vw;
+  border-radius: 8px;
+  margin-top: 4rem;
+}
+.header {
+  text-align: center;
+  font-size: 2.5rem;
+  color: $color-blue-1;
+  margin-bottom: 3rem;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: 37.5em) {
+    display: block;
+  }
+}
+
+.red,
+.blue {
+  text-align: center;
+  color: $color-white;
+  padding: 0.8rem 3rem;
+  border-radius: 6px;
+}
+.red {
+  background-color: $color-red;
+  @media (max-width: 37.5em) {
+    margin-bottom: 0.5rem;
+  }
+}
+.blue {
+  background-color: $color-blue-2;
+}
